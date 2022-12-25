@@ -8,8 +8,22 @@ fn main() {
 
         if counter == 10 {
             // if counter is 10, break loop and return some value
-            break counter * 2;
+            break counter * 2
         }
     };
     println!("The result is {result}");
+
+    let mut number = 3;
+
+    while number != 0 {
+        println!("{}!", number);
+        number -= 1;
+    }
+    println!("LIFOFF!!!");
+
+    //using range
+    for number in (1..4).rev() {
+        println!("{number}!");
+    }
+    println!("LIFTOFF!!!");    
 }
